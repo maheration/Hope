@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48F18B0C1D429C1B000508A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F18B0B1D429C1B000508A0 /* AppDelegate.swift */; };
+		48F18B0E1D429C1B000508A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F18B0D1D429C1B000508A0 /* ViewController.swift */; };
+		48F18B111D429C1B000508A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F18B0F1D429C1B000508A0 /* Main.storyboard */; };
+		48F18B141D429C1B000508A0 /* Hope.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48F18B121D429C1B000508A0 /* Hope.xcdatamodeld */; };
+		48F18B161D429C1B000508A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F18B151D429C1B000508A0 /* Assets.xcassets */; };
+		48F18B191D429C1B000508A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F18B171D429C1B000508A0 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		48F18B081D429C1B000508A0 /* Hope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hope.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48F18B0B1D429C1B000508A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		48F18B0D1D429C1B000508A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		48F18B101D429C1B000508A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		48F18B131D429C1B000508A0 /* Hope.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hope.xcdatamodel; sourceTree = "<group>"; };
+		48F18B151D429C1B000508A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48F18B181D429C1B000508A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		48F18B1A1D429C1B000508A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48F18B051D429C1B000508A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48F18AFF1D429C1B000508A0 = {
+			isa = PBXGroup;
+			children = (
+				48F18B0A1D429C1B000508A0 /* Hope */,
+				48F18B091D429C1B000508A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		48F18B091D429C1B000508A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48F18B081D429C1B000508A0 /* Hope.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48F18B0A1D429C1B000508A0 /* Hope */ = {
+			isa = PBXGroup;
+			children = (
+				48F18B0B1D429C1B000508A0 /* AppDelegate.swift */,
+				48F18B0D1D429C1B000508A0 /* ViewController.swift */,
+				48F18B0F1D429C1B000508A0 /* Main.storyboard */,
+				48F18B151D429C1B000508A0 /* Assets.xcassets */,
+				48F18B171D429C1B000508A0 /* LaunchScreen.storyboard */,
+				48F18B1A1D429C1B000508A0 /* Info.plist */,
+				48F18B121D429C1B000508A0 /* Hope.xcdatamodeld */,
+			);
+			path = Hope;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48F18B071D429C1B000508A0 /* Hope */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48F18B1D1D429C1B000508A0 /* Build configuration list for PBXNativeTarget "Hope" */;
+			buildPhases = (
+				48F18B041D429C1B000508A0 /* Sources */,
+				48F18B051D429C1B000508A0 /* Frameworks */,
+				48F18B061D429C1B000508A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hope;
+			productName = Hope;
+			productReference = 48F18B081D429C1B000508A0 /* Hope.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48F18B001D429C1B000508A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Maher Aldemerdash";
+				TargetAttributes = {
+					48F18B071D429C1B000508A0 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 48F18B031D429C1B000508A0 /* Build configuration list for PBXProject "Hope" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 48F18AFF1D429C1B000508A0;
+			productRefGroup = 48F18B091D429C1B000508A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48F18B071D429C1B000508A0 /* Hope */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48F18B061D429C1B000508A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48F18B191D429C1B000508A0 /* LaunchScreen.storyboard in Resources */,
+				48F18B161D429C1B000508A0 /* Assets.xcassets in Resources */,
+				48F18B111D429C1B000508A0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48F18B041D429C1B000508A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48F18B0E1D429C1B000508A0 /* ViewController.swift in Sources */,
+				48F18B0C1D429C1B000508A0 /* AppDelegate.swift in Sources */,
+				48F18B141D429C1B000508A0 /* Hope.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		48F18B0F1D429C1B000508A0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48F18B101D429C1B000508A0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		48F18B171D429C1B000508A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48F18B181D429C1B000508A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48F18B1B1D429C1B000508A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48F18B1C1D429C1B000508A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48F18B1E1D429C1B000508A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Hope/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.creativeapps.Hope;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		48F18B1F1D429C1B000508A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Hope/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.creativeapps.Hope;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48F18B031D429C1B000508A0 /* Build configuration list for PBXProject "Hope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48F18B1B1D429C1B000508A0 /* Debug */,
+				48F18B1C1D429C1B000508A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48F18B1D1D429C1B000508A0 /* Build configuration list for PBXNativeTarget "Hope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48F18B1E1D429C1B000508A0 /* Debug */,
+				48F18B1F1D429C1B000508A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		48F18B121D429C1B000508A0 /* Hope.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				48F18B131D429C1B000508A0 /* Hope.xcdatamodel */,
+			);
+			currentVersion = 48F18B131D429C1B000508A0 /* Hope.xcdatamodel */;
+			path = Hope.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 48F18B001D429C1B000508A0 /* Project object */;
+}
