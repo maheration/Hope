@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var editBtn: UIButton!
     
-    var names = ["majer", "mohammed", "lulu"]
+    var donors = [Donor]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,28 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        fetchAndSetResult()
+        tableView.reloadData()
+        
+    }
+    
+    func fetchAndSetResult() {
+        
+        let app = UIApplication.sharedApplication().delegate as! AppDelegate
+        let context = app.managedObjectContext
+        let fetchRequest = NSFetchRequest(entityName: "Donor")
+        
+        do {
+            let results = try context.executeFetchRequest(fetchRequest)
+            donors = results as! [Donor]
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,8 +55,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         if let cell = tableView.dequeueReusableCellWithIdentifier("DonorCell") as? DonorCell {
             
-            let name = names[indexPath.row]
-            cell.titleLbl.text = name
+            let donor = donors[indexPath.row]
+            print(donor)
+            cell.titleLbl.text = "donor"+"\(indexPath.row + 1)"
             return cell
         }
         
@@ -42,7 +66,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return names.count
+        return donors.count
     }
 
     @IBAction func edit(sender: AnyObject) {
@@ -63,12 +87,31 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         
         if editingStyle == .Delete {
-            names.removeAtIndex(indexPath.row)
+            
+            let CurrentDonor = donors[indexPath.row]
+            let app = UIApplication.sharedApplication().delegate as! AppDelegate
+            let context = app.managedObjectContext
+            context.deleteObject(CurrentDonor)
+            
+            do {
+                try context.save()
+            } catch {
+                print("failed deleting")
+            }
+            
+            donors.removeAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
         }
     }
     
-    
+//    let appDel:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+//    let context:NSManagedObjectContext = appDel.managedObjectContext
+//    context.deleteObject(myData[indexPath.row] )
+//    myData.removeAtIndex(indexPath.row)
+//    do {
+//    try context.save()
+//    } catch _ {
+//    }
     
 
 }

@@ -250,5 +250,15 @@ class AddDonorVC: UITableViewController {
             donor.pancreaseOrgan = false
         }
         
+        context.insertObject(donor)
+        
+        do {
+            try context.save()
+        } catch {
+            print("failed save")
+        }
+        
+        dismissViewControllerAnimated(true, completion: nil)
+        
     }
 }
