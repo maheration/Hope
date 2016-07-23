@@ -1,4 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G31" minimumToolsVersion="Automatic">
+    <entity name="Donor" representedClassName=".Donor" syncable="YES">
+        <attribute name="biopsy" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bloodType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cmvSerology" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="crtAdmition" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="crtDeath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="crtPeak" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="crtPre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deathCause" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dic" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="downTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ebvSerology" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="feverOrSeriousDis" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hbvSerology" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hcvSerology" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="heartOrgan" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hivSerology" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hsvSerology" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="liverOrgan" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lungOrgan" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="nephroToxicDrugs" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pancreaseOrgan" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="perfusionType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="persistHypoBp" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preDM" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preFamilyhx" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preHtn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preIVDU" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preMalignancy" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preMeds" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preSmoking" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preSocialhx" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="radioImaging" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="retrievalTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="syphlisSerology" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transfusion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="urineAnalysis" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="urineOutPut" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vzvSerology" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Donor" positionX="-63" positionY="-18" width="128" height="660"/>
+    </elements>
 </model>

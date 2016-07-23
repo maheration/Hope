@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4850EBFC1D43C13B003B544E /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4850EBFB1D43C13B003B544E /* MaterialButton.swift */; };
+		4850EBFF1D43C656003B544E /* Donor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4850EBFD1D43C656003B544E /* Donor+CoreDataProperties.swift */; };
+		4850EC001D43C656003B544E /* Donor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4850EBFE1D43C656003B544E /* Donor.swift */; };
 		489B18531D42C9E000FFBD92 /* MaterialTxtFld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489B18521D42C9E000FFBD92 /* MaterialTxtFld.swift */; };
 		48F18B0C1D429C1B000508A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F18B0B1D429C1B000508A0 /* AppDelegate.swift */; };
 		48F18B0E1D429C1B000508A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F18B0D1D429C1B000508A0 /* ViewController.swift */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4850EBFB1D43C13B003B544E /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		4850EBFD1D43C656003B544E /* Donor+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Donor+CoreDataProperties.swift"; path = "../Donor+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4850EBFE1D43C656003B544E /* Donor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Donor.swift; path = ../Donor.swift; sourceTree = "<group>"; };
 		489B18521D42C9E000FFBD92 /* MaterialTxtFld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTxtFld.swift; sourceTree = "<group>"; };
 		48F18B081D429C1B000508A0 /* Hope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F18B0B1D429C1B000508A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +88,8 @@
 		48F18B201D42A086000508A0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4850EBFD1D43C656003B544E /* Donor+CoreDataProperties.swift */,
+				4850EBFE1D43C656003B544E /* Donor.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -92,6 +100,7 @@
 				48F18B231D42A0B8000508A0 /* DonorCell.swift */,
 				48F18B251D42A1D4000508A0 /* MaterialView.swift */,
 				489B18521D42C9E000FFBD92 /* MaterialTxtFld.swift */,
+				4850EBFB1D43C13B003B544E /* MaterialButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -182,8 +191,11 @@
 				48F18B2A1D42BA66000508A0 /* AddDonorVC.swift in Sources */,
 				48F18B0E1D429C1B000508A0 /* ViewController.swift in Sources */,
 				489B18531D42C9E000FFBD92 /* MaterialTxtFld.swift in Sources */,
+				4850EBFC1D43C13B003B544E /* MaterialButton.swift in Sources */,
 				48F18B261D42A1D4000508A0 /* MaterialView.swift in Sources */,
 				48F18B0C1D429C1B000508A0 /* AppDelegate.swift in Sources */,
+				4850EBFF1D43C656003B544E /* Donor+CoreDataProperties.swift in Sources */,
+				4850EC001D43C656003B544E /* Donor.swift in Sources */,
 				48F18B141D429C1B000508A0 /* Hope.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

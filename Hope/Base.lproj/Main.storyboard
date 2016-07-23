@@ -440,42 +440,15 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Premorbid" id="LB3-xJ-haN">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="296" id="KdX-PS-GWD">
-                                        <rect key="frame" x="0.0" y="707.5" width="600" height="296"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="260" id="KdX-PS-GWD">
+                                        <rect key="frame" x="0.0" y="707.5" width="600" height="260"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KdX-PS-GWD" id="MeQ-JD-UnL">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="295.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="259.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xa8-y6-9uQ">
-                                                    <rect key="frame" x="175" y="13" width="250" height="71"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="752" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" misplaced="YES" text="HTN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gr-Ue-n9a">
-                                                            <rect key="frame" x="0.0" y="24" width="36" height="24"/>
-                                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3H1-3O-QU2">
-                                                            <rect key="frame" x="59" y="20" width="51" height="31"/>
-                                                        </switch>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Stone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OgL-7I-KUD">
-                                                            <rect key="frame" x="132" y="24" width="46" height="24"/>
-                                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="751" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ADP-b6-PoQ">
-                                                            <rect key="frame" x="201" y="20" width="51" height="31"/>
-                                                        </switch>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="71" id="8kw-cf-emw"/>
-                                                        <constraint firstAttribute="width" constant="250" id="gxU-q7-KAX"/>
-                                                    </constraints>
-                                                </stackView>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DM? A1C?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="53q-Oe-0cV" customClass="MaterialTxtFld" customModule="Hope" customModuleProvider="target">
-                                                    <rect key="frame" x="175" y="89" width="122" height="35"/>
+                                                    <rect key="frame" x="175" y="53" width="122" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="QEV-yV-KTs"/>
                                                         <constraint firstAttribute="width" constant="122" id="ZGW-Fl-dmg"/>
@@ -485,7 +458,7 @@
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Smoking?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HHM-Il-oqz" customClass="MaterialTxtFld" customModule="Hope" customModuleProvider="target">
-                                                    <rect key="frame" x="303" y="89" width="122" height="35"/>
+                                                    <rect key="frame" x="303" y="53" width="122" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="122" id="ek3-BN-g5J"/>
                                                         <constraint firstAttribute="height" constant="35" id="plX-h7-bHz"/>
@@ -495,7 +468,7 @@
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="IVDU?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5cl-Vc-4cO" customClass="MaterialTxtFld" customModule="Hope" customModuleProvider="target">
-                                                    <rect key="frame" x="175" y="129" width="122" height="35"/>
+                                                    <rect key="frame" x="175" y="93" width="122" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="122" id="dW7-ic-JD6"/>
                                                         <constraint firstAttribute="height" constant="35" id="s51-al-il6"/>
@@ -505,7 +478,7 @@
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Malignancy?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NuD-xd-TqP" customClass="MaterialTxtFld" customModule="Hope" customModuleProvider="target">
-                                                    <rect key="frame" x="303" y="129" width="122" height="35"/>
+                                                    <rect key="frame" x="303" y="93" width="122" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="122" id="cUV-DM-LH7"/>
                                                         <constraint firstAttribute="height" constant="35" id="iiu-OL-xZX"/>
@@ -515,7 +488,7 @@
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Medication hx?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wk8-qe-k7B" customClass="MaterialTxtFld" customModule="Hope" customModuleProvider="target">
-                                                    <rect key="frame" x="175" y="169" width="250" height="35"/>
+                                                    <rect key="frame" x="175" y="133" width="250" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="250" id="Mu8-xN-MJc"/>
                                                         <constraint firstAttribute="height" constant="35" id="vtD-LJ-Lxc"/>
@@ -525,7 +498,7 @@
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Family hx?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A8E-IO-snG" customClass="MaterialTxtFld" customModule="Hope" customModuleProvider="target">
-                                                    <rect key="frame" x="175" y="209" width="250" height="35"/>
+                                                    <rect key="frame" x="175" y="173" width="250" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="ZqZ-c5-JbM"/>
                                                         <constraint firstAttribute="width" constant="250" id="czm-x1-Eeg"/>
@@ -535,7 +508,7 @@
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Social hx?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MBn-Cw-OEe" customClass="MaterialTxtFld" customModule="Hope" customModuleProvider="target">
-                                                    <rect key="frame" x="175" y="249" width="250" height="35"/>
+                                                    <rect key="frame" x="175" y="213" width="250" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="250" id="9l4-A7-gZB"/>
                                                         <constraint firstAttribute="height" constant="35" id="lO5-JC-gUP"/>
@@ -544,25 +517,358 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                 </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="HTN?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ah0-OI-xDw" customClass="MaterialTxtFld" customModule="Hope" customModuleProvider="target">
+                                                    <rect key="frame" x="175" y="13" width="250" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="1Qv-F7-wuv"/>
+                                                        <constraint firstAttribute="width" constant="250" id="zja-NM-eVN"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                </textField>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Wk8-qe-k7B" firstAttribute="top" secondItem="NuD-xd-TqP" secondAttribute="bottom" constant="5" id="0es-W2-ktl"/>
-                                                <constraint firstItem="HHM-Il-oqz" firstAttribute="top" secondItem="xa8-y6-9uQ" secondAttribute="bottom" constant="5" id="745-ye-sk3"/>
+                                                <constraint firstItem="ah0-OI-xDw" firstAttribute="centerX" secondItem="MeQ-JD-UnL" secondAttribute="centerX" id="8c5-dQ-YwU"/>
+                                                <constraint firstItem="53q-Oe-0cV" firstAttribute="top" secondItem="ah0-OI-xDw" secondAttribute="bottom" constant="5" id="8yF-3i-6kW"/>
                                                 <constraint firstItem="NuD-xd-TqP" firstAttribute="trailing" secondItem="HHM-Il-oqz" secondAttribute="trailing" id="AQk-5E-IVg"/>
-                                                <constraint firstItem="xa8-y6-9uQ" firstAttribute="top" secondItem="MeQ-JD-UnL" secondAttribute="topMargin" constant="5" id="Cxh-mb-Nzt"/>
                                                 <constraint firstItem="MBn-Cw-OEe" firstAttribute="centerX" secondItem="MeQ-JD-UnL" secondAttribute="centerX" id="Fzd-Bp-fFP"/>
-                                                <constraint firstItem="HHM-Il-oqz" firstAttribute="trailing" secondItem="xa8-y6-9uQ" secondAttribute="trailing" id="eYB-FW-r5a"/>
-                                                <constraint firstItem="xa8-y6-9uQ" firstAttribute="centerX" secondItem="MeQ-JD-UnL" secondAttribute="centerX" id="hh3-0f-RGb"/>
+                                                <constraint firstItem="ah0-OI-xDw" firstAttribute="top" secondItem="MeQ-JD-UnL" secondAttribute="topMargin" constant="5" id="PNH-2u-W2a"/>
+                                                <constraint firstItem="53q-Oe-0cV" firstAttribute="leading" secondItem="ah0-OI-xDw" secondAttribute="leading" id="Qdh-y2-gVQ"/>
+                                                <constraint firstItem="HHM-Il-oqz" firstAttribute="trailing" secondItem="ah0-OI-xDw" secondAttribute="trailing" id="VbA-O2-zvC"/>
                                                 <constraint firstItem="5cl-Vc-4cO" firstAttribute="leading" secondItem="53q-Oe-0cV" secondAttribute="leading" id="iEZ-ik-8GR"/>
                                                 <constraint firstItem="A8E-IO-snG" firstAttribute="top" secondItem="Wk8-qe-k7B" secondAttribute="bottom" constant="5" id="nxb-sC-B30"/>
                                                 <constraint firstItem="NuD-xd-TqP" firstAttribute="top" secondItem="HHM-Il-oqz" secondAttribute="bottom" constant="5" id="oEQ-gP-ncr"/>
-                                                <constraint firstItem="53q-Oe-0cV" firstAttribute="leading" secondItem="xa8-y6-9uQ" secondAttribute="leading" id="oet-xJ-hZj"/>
                                                 <constraint firstItem="A8E-IO-snG" firstAttribute="centerX" secondItem="MeQ-JD-UnL" secondAttribute="centerX" id="p73-nf-Pac"/>
                                                 <constraint firstItem="5cl-Vc-4cO" firstAttribute="top" secondItem="53q-Oe-0cV" secondAttribute="bottom" constant="5" id="sRf-VN-VgQ"/>
-                                                <constraint firstItem="xa8-y6-9uQ" firstAttribute="top" secondItem="MeQ-JD-UnL" secondAttribute="topMargin" constant="5" id="t56-Xt-pe7"/>
-                                                <constraint firstItem="53q-Oe-0cV" firstAttribute="top" secondItem="xa8-y6-9uQ" secondAttribute="bottom" constant="5" id="u5s-fE-8o8"/>
                                                 <constraint firstItem="MBn-Cw-OEe" firstAttribute="top" secondItem="A8E-IO-snG" secondAttribute="bottom" constant="5" id="uiz-GZ-5co"/>
+                                                <constraint firstItem="HHM-Il-oqz" firstAttribute="top" secondItem="ah0-OI-xDw" secondAttribute="bottom" constant="5" id="vBk-Ju-7dB"/>
                                                 <constraint firstItem="Wk8-qe-k7B" firstAttribute="centerX" secondItem="MeQ-JD-UnL" secondAttribute="centerX" id="yKQ-Ek-343"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Lab work" id="aOq-Xd-X7j">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="263" id="ddu-MJ-mSk">
+                                        <rect key="frame" x="0.0" y="1017.5" width="600" height="263"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ddu-MJ-mSk" id="JHM-A4-lMS">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="262.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Crt pre" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UgD-7d-q28" customClass="MaterialTxtFld" customModule="Hope" customModuleProvider="target">
+                                                    <rect key="frame" x="175" y="13" width="67" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="SZt-YO-wfC"/>
+                                                        <constraint firstAttribute="width" constant="67" id="fAE-6c-B8u"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Peak" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l2n-9B-80l" customClass="MaterialTxtFld" customModule="Hope" customModuleProvider="target">
+                                                    <rect key="frame" x="250" y="13" width="55" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="55" id="NdU-8z-4zu"/>
+                                                        <constraint firstAttribute="height" constant="35" id="qv6-XW-e2Q"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adm" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vCJ-6r-vEI" customClass="MaterialTxtFld" customModule="Hope" customModuleProvider="target">
+                                                    <rect key="frame" x="313" y="13" width="50" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="Dcs-a2-lG1"/>
+                                                        <constraint firstAttribute="width" constant="50" id="zpI-Gl-7AX"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Death" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DDF-Zi-T3y" customClass="MaterialTxtFld" customModule="Hope" customModuleProvider="target">
+                                                    <rect key="frame" x="370" y="13" width="55" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="55" id="YPL-b0-zgX"/>
+                                                        <constraint firstAttribute="height" constant="35" id="yqt-Y9-zov"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="HIV" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eYv-cb-qXM" customClass="MaterialTxtFld" customModule="Hope" customModuleProvider="target">
+                                                    <rect key="frame" x="175" y="53" width="75" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="75" id="P9O-ME-ay3"/>
+                                                        <constraint firstAttribute="height" constant="35" id="gKM-n5-VDP"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="HBV" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m30-8j-fqy" customClass="MaterialTxtFld" customModule="Hope" customModuleProvider="target">
+                                                    <rect key="frame" x="263" y="53" width="75" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="b8J-Jt-hCS"/>
+                                                        <constraint firstAttribute="width" constant="75" id="kb9-10-BPN"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="HCV" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nwh-Pr-uVv" customClass="MaterialTxtFld" customModule="Hope" customModuleProvider="target">
+                                                    <rect key="frame" x="350" y="53" width="75" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="75" id="Bqz-WC-r1v"/>
+                                                        <constraint firstAttribute="height" constant="35" id="aKd-eZ-7O7"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CMV" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R08-xs-f0a" customClass="MaterialTxtFld" customModule="Hope" customModuleProvider="target">
+                                                    <rect key="frame" x="175" y="93" width="75" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="75" id="2Zf-n5-UHc"/>
+                                                        <constraint firstAttribute="height" constant="35" id="IyU-1O-xxn"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="EBV" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gcI-w1-Of9" customClass="MaterialTxtFld" customModule="Hope" customModuleProvider="target">
+                                                    <rect key="frame" x="263" y="93" width="75" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="Eig-vz-9mV"/>
+                                                        <constraint firstAttribute="width" constant="75" id="fqJ-Mj-pZT"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="VZV" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o60-5X-8mE" customClass="MaterialTxtFld" customModule="Hope" customModuleProvider="target">
+                                                    <rect key="frame" x="350" y="93" width="75" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="IDY-Zs-9tK"/>
+                                                        <constraint firstAttribute="width" constant="75" id="Nt3-wJ-gww"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="HSV" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hLo-Kb-AbF" customClass="MaterialTxtFld" customModule="Hope" customModuleProvider="target">
+                                                    <rect key="frame" x="175" y="133" width="122" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="C4Y-R5-TKX"/>
+                                                        <constraint firstAttribute="width" constant="122" id="us3-td-BJe"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Syphlis" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o5g-M2-XDW" customClass="MaterialTxtFld" customModule="Hope" customModuleProvider="target">
+                                                    <rect key="frame" x="303" y="133" width="122" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="122" id="Tm3-M8-eId"/>
+                                                        <constraint firstAttribute="height" constant="35" id="nRf-Mk-Et2"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Urine analysis" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ejN-3A-Kxr" customClass="MaterialTxtFld" customModule="Hope" customModuleProvider="target">
+                                                    <rect key="frame" x="175" y="173" width="250" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="250" id="Aba-9M-AGR"/>
+                                                        <constraint firstAttribute="height" constant="35" id="XZI-om-ddB"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Biopsy" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XV7-18-clp" customClass="MaterialTxtFld" customModule="Hope" customModuleProvider="target">
+                                                    <rect key="frame" x="175" y="213" width="250" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="250" id="cbX-yj-beg"/>
+                                                        <constraint firstAttribute="height" constant="35" id="nAJ-ca-uFg"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="vCJ-6r-vEI" firstAttribute="leading" secondItem="l2n-9B-80l" secondAttribute="trailing" constant="8" id="2Sv-Vf-RpS"/>
+                                                <constraint firstItem="UgD-7d-q28" firstAttribute="centerX" secondItem="JHM-A4-lMS" secondAttribute="centerX" constant="-91" id="3Qx-nm-vej"/>
+                                                <constraint firstItem="o60-5X-8mE" firstAttribute="trailing" secondItem="o5g-M2-XDW" secondAttribute="trailing" id="68i-CZ-RWU"/>
+                                                <constraint firstItem="eYv-cb-qXM" firstAttribute="top" secondItem="UgD-7d-q28" secondAttribute="bottom" constant="5" id="70R-BU-z2F"/>
+                                                <constraint firstItem="eYv-cb-qXM" firstAttribute="leading" secondItem="UgD-7d-q28" secondAttribute="leading" id="7nU-2d-6D2"/>
+                                                <constraint firstItem="l2n-9B-80l" firstAttribute="leading" secondItem="UgD-7d-q28" secondAttribute="trailing" constant="8" id="9fN-8Y-Qij"/>
+                                                <constraint firstItem="UgD-7d-q28" firstAttribute="top" secondItem="JHM-A4-lMS" secondAttribute="topMargin" constant="5" id="9tU-iJ-a7l"/>
+                                                <constraint firstItem="DDF-Zi-T3y" firstAttribute="leading" secondItem="vCJ-6r-vEI" secondAttribute="trailing" constant="7" id="CoH-fk-7rb"/>
+                                                <constraint firstItem="hLo-Kb-AbF" firstAttribute="leading" secondItem="R08-xs-f0a" secondAttribute="leading" id="FzX-Kq-NKg"/>
+                                                <constraint firstItem="nwh-Pr-uVv" firstAttribute="top" secondItem="DDF-Zi-T3y" secondAttribute="bottom" constant="5" id="IIq-c4-EWe"/>
+                                                <constraint firstItem="o60-5X-8mE" firstAttribute="top" secondItem="nwh-Pr-uVv" secondAttribute="bottom" constant="5" id="J4L-ay-iu6"/>
+                                                <constraint firstItem="XV7-18-clp" firstAttribute="centerX" secondItem="JHM-A4-lMS" secondAttribute="centerX" id="Ko5-fD-X3t"/>
+                                                <constraint firstItem="R08-xs-f0a" firstAttribute="leading" secondItem="eYv-cb-qXM" secondAttribute="leading" id="LUL-xM-sCW"/>
+                                                <constraint firstItem="DDF-Zi-T3y" firstAttribute="trailing" secondItem="nwh-Pr-uVv" secondAttribute="trailing" id="NkJ-Fs-Et3"/>
+                                                <constraint firstItem="m30-8j-fqy" firstAttribute="top" secondItem="vCJ-6r-vEI" secondAttribute="bottom" constant="5" id="OCu-of-iop"/>
+                                                <constraint firstItem="o60-5X-8mE" firstAttribute="trailing" secondItem="nwh-Pr-uVv" secondAttribute="trailing" id="PLu-DD-p4R"/>
+                                                <constraint firstItem="gcI-w1-Of9" firstAttribute="centerX" secondItem="JHM-A4-lMS" secondAttribute="centerX" id="SEg-hf-7xj"/>
+                                                <constraint firstItem="gcI-w1-Of9" firstAttribute="top" secondItem="m30-8j-fqy" secondAttribute="bottom" constant="5" id="Xni-dc-h4m"/>
+                                                <constraint firstItem="l2n-9B-80l" firstAttribute="top" secondItem="JHM-A4-lMS" secondAttribute="topMargin" constant="5" id="ZI3-cS-ca3"/>
+                                                <constraint firstItem="vCJ-6r-vEI" firstAttribute="top" secondItem="JHM-A4-lMS" secondAttribute="topMargin" constant="5" id="aGk-t3-Csu"/>
+                                                <constraint firstItem="ejN-3A-Kxr" firstAttribute="top" secondItem="o5g-M2-XDW" secondAttribute="bottom" constant="5" id="d89-nq-c2D"/>
+                                                <constraint firstItem="o5g-M2-XDW" firstAttribute="top" secondItem="o60-5X-8mE" secondAttribute="bottom" constant="5" id="djf-hk-Uu0"/>
+                                                <constraint firstItem="XV7-18-clp" firstAttribute="top" secondItem="ejN-3A-Kxr" secondAttribute="bottom" constant="5" id="eDa-lw-aUX"/>
+                                                <constraint firstItem="m30-8j-fqy" firstAttribute="centerX" secondItem="JHM-A4-lMS" secondAttribute="centerX" id="gQf-JG-xam"/>
+                                                <constraint firstItem="R08-xs-f0a" firstAttribute="top" secondItem="eYv-cb-qXM" secondAttribute="bottom" constant="5" id="lWj-NA-M1G"/>
+                                                <constraint firstItem="hLo-Kb-AbF" firstAttribute="top" secondItem="gcI-w1-Of9" secondAttribute="bottom" constant="5" id="lpi-ql-1dL"/>
+                                                <constraint firstItem="ejN-3A-Kxr" firstAttribute="centerX" secondItem="JHM-A4-lMS" secondAttribute="centerX" id="yBN-76-aQz"/>
+                                                <constraint firstItem="DDF-Zi-T3y" firstAttribute="top" secondItem="JHM-A4-lMS" secondAttribute="topMargin" constant="5" id="znE-WJ-JtS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Other Organs" id="qBW-E4-EIo">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="224" id="bCd-23-Fan">
+                                        <rect key="frame" x="0.0" y="1330.5" width="600" height="224"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bCd-23-Fan" id="SzB-sf-Bcz">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="223.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="juW-N4-2rH">
+                                                    <rect key="frame" x="160" y="27.5" width="280" height="169"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="180" translatesAutoresizingMaskIntoConstraints="NO" id="KRr-rb-zaz">
+                                                            <rect key="frame" x="0.0" y="0.0" width="280" height="31"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heart:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7E-Nt-dhf">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zbS-6b-1Ig">
+                                                                    <rect key="frame" x="231" y="0.0" width="51" height="31"/>
+                                                                </switch>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uDc-co-NrV">
+                                                            <rect key="frame" x="0.0" y="46" width="280" height="31"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lung:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33B-so-QZC">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="231" height="31"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2LZ-dp-xVJ">
+                                                                    <rect key="frame" x="231" y="0.0" width="51" height="31"/>
+                                                                </switch>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B0Q-we-JCB">
+                                                            <rect key="frame" x="0.0" y="92" width="280" height="31"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liver:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKq-Bf-f3B">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="231" height="31"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fgj-r9-Buw">
+                                                                    <rect key="frame" x="231" y="0.0" width="51" height="31"/>
+                                                                </switch>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yku-cP-1ct">
+                                                            <rect key="frame" x="0.0" y="138" width="280" height="31"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pancrease:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFq-cf-lpp">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="231" height="31"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9fH-sn-Vdl">
+                                                                    <rect key="frame" x="231" y="0.0" width="51" height="31"/>
+                                                                </switch>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="169" id="10A-JM-xVB"/>
+                                                        <constraint firstAttribute="width" constant="280" id="Ztn-jL-Xaw"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="juW-N4-2rH" firstAttribute="centerX" secondItem="SzB-sf-Bcz" secondAttribute="centerX" id="fGr-h0-afL"/>
+                                                <constraint firstItem="juW-N4-2rH" firstAttribute="centerY" secondItem="SzB-sf-Bcz" secondAttribute="centerY" id="idj-4k-EzN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Other Info" id="0ip-dk-yOv">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="181" id="v8z-Ry-1e9">
+                                        <rect key="frame" x="0.0" y="1605" width="600" height="181"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v8z-Ry-1e9" id="gbE-NH-6NH">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="180.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Est. time of retrieval" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="500-Si-k2A" customClass="MaterialTxtFld" customModule="Hope" customModuleProvider="target">
+                                                    <rect key="frame" x="175" y="28" width="250" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="e6w-Ls-BRm"/>
+                                                        <constraint firstAttribute="width" constant="250" id="z31-bP-qKt"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type of perfusion" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D6y-zQ-XDG" customClass="MaterialTxtFld" customModule="Hope" customModuleProvider="target">
+                                                    <rect key="frame" x="175" y="68" width="250" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="250" id="1CK-mQ-ayy"/>
+                                                        <constraint firstAttribute="height" constant="35" id="GNa-av-92E"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42V-mR-11Z" customClass="MaterialButton" customModule="Hope" customModuleProvider="target">
+                                                    <rect key="frame" x="175" y="123" width="250" height="35"/>
+                                                    <color key="backgroundColor" red="0.53725490196078429" green="0.81960784313725488" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="Oyg-C6-cOt"/>
+                                                        <constraint firstAttribute="width" constant="250" id="oGc-Yc-zNu"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                                    <state key="normal" title="SAVE">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="saveBtnPressed:" destination="EaX-sd-KfW" eventType="touchUpInside" id="ap0-5Q-bYv"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="D6y-zQ-XDG" firstAttribute="top" secondItem="500-Si-k2A" secondAttribute="bottom" constant="5" id="9Ke-1a-Qfx"/>
+                                                <constraint firstItem="42V-mR-11Z" firstAttribute="top" secondItem="D6y-zQ-XDG" secondAttribute="bottom" constant="20" id="I1b-SA-eL2"/>
+                                                <constraint firstItem="D6y-zQ-XDG" firstAttribute="centerX" secondItem="gbE-NH-6NH" secondAttribute="centerX" id="Yee-nA-sn8"/>
+                                                <constraint firstItem="42V-mR-11Z" firstAttribute="centerX" secondItem="gbE-NH-6NH" secondAttribute="centerX" id="dFm-d5-W2j"/>
+                                                <constraint firstItem="500-Si-k2A" firstAttribute="centerX" secondItem="gbE-NH-6NH" secondAttribute="centerX" id="hsb-Ib-iUF"/>
+                                                <constraint firstItem="500-Si-k2A" firstAttribute="top" secondItem="gbE-NH-6NH" secondAttribute="topMargin" constant="20" id="uTT-Je-8XK"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -574,6 +880,49 @@
                             <outlet property="delegate" destination="EaX-sd-KfW" id="lwO-hO-1Rt"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="admCrtTxtFld" destination="vCJ-6r-vEI" id="cOb-o6-Sc2"/>
+                        <outlet property="biopsyTxtFld" destination="XV7-18-clp" id="f3s-s1-YLY"/>
+                        <outlet property="bloodTypeTxtFld" destination="dVk-up-oY8" id="2d4-E6-dE1"/>
+                        <outlet property="cmvTxtFld" destination="R08-xs-f0a" id="VWT-hX-WYY"/>
+                        <outlet property="crtPreTxtFld" destination="UgD-7d-q28" id="akk-ny-ZaL"/>
+                        <outlet property="deathCauseTxtFld" destination="0H0-iY-ad3" id="dLA-sx-oJ1"/>
+                        <outlet property="deathCrtTxtFld" destination="DDF-Zi-T3y" id="dzY-nf-3wY"/>
+                        <outlet property="dicTxtFld" destination="Xc9-fk-j1y" id="tmj-Ck-EB0"/>
+                        <outlet property="downTimeTxtFld" destination="t4k-BZ-aI1" id="wZg-iU-4j1"/>
+                        <outlet property="ebvTxtFld" destination="gcI-w1-Of9" id="Exx-DD-gFH"/>
+                        <outlet property="estTimeRetrievTxtFld" destination="500-Si-k2A" id="8SE-6c-xXw"/>
+                        <outlet property="feverInfecTxtFld" destination="vwm-8N-i2c" id="bVN-nb-u7m"/>
+                        <outlet property="hbvTxtFld" destination="m30-8j-fqy" id="R4Q-zy-DBZ"/>
+                        <outlet property="hcvTxtFld" destination="nwh-Pr-uVv" id="jj3-1u-7wH"/>
+                        <outlet property="heartSwitch" destination="zbS-6b-1Ig" id="gZO-jg-4gh"/>
+                        <outlet property="hivTxtFld" destination="eYv-cb-qXM" id="SQ6-Zl-rdq"/>
+                        <outlet property="hsvTxtFld" destination="hLo-Kb-AbF" id="qPJ-lv-qpU"/>
+                        <outlet property="htTxtFld" destination="q5h-2A-fnD" id="Vr5-Qv-1yX"/>
+                        <outlet property="imagingTxtFld" destination="INT-Fl-LYI" id="hwn-9Z-8Is"/>
+                        <outlet property="liverSwitch" destination="fgj-r9-Buw" id="qPb-H7-eAN"/>
+                        <outlet property="locationTxtFld" destination="0pq-Wf-fMX" id="i5O-ri-Uu5"/>
+                        <outlet property="lungSwitch" destination="2LZ-dp-xVJ" id="pB0-WI-Rra"/>
+                        <outlet property="nephrToxicTxtFld" destination="AcY-jm-D7u" id="5tO-Tq-aKt"/>
+                        <outlet property="pancrSwitch" destination="9fH-sn-Vdl" id="J2J-oJ-rVb"/>
+                        <outlet property="peakCrtTxtFld" destination="l2n-9B-80l" id="p8T-Fo-0UQ"/>
+                        <outlet property="persistHypoBPTxtFld" destination="Mbu-Z9-jYZ" id="y0u-cp-zab"/>
+                        <outlet property="preDmTxtFld" destination="53q-Oe-0cV" id="VfF-OC-DmZ"/>
+                        <outlet property="preFamilyHxTxtFld" destination="A8E-IO-snG" id="qz8-9d-mAK"/>
+                        <outlet property="preHtnTxtFld" destination="ah0-OI-xDw" id="ubA-vn-bKB"/>
+                        <outlet property="preIVDUTxtFld" destination="5cl-Vc-4cO" id="piM-o6-ouf"/>
+                        <outlet property="preMalignancyTxtFld" destination="NuD-xd-TqP" id="iaG-t0-1Vm"/>
+                        <outlet property="preMedsTxtFld" destination="Wk8-qe-k7B" id="76I-lz-VL7"/>
+                        <outlet property="preSmokingTxtFld" destination="HHM-Il-oqz" id="NgG-M6-mHi"/>
+                        <outlet property="preSocialHxTxtFld" destination="MBn-Cw-OEe" id="Znn-XT-Bob"/>
+                        <outlet property="syphlisTxtFld" destination="o5g-M2-XDW" id="dzo-kC-nH7"/>
+                        <outlet property="transfusionTxtFld" destination="tfK-3x-u5f" id="sBA-4r-75O"/>
+                        <outlet property="typeOfPerfusionTxtFld" destination="D6y-zQ-XDG" id="DLA-dz-KlX"/>
+                        <outlet property="urineAnaylysisTxtFld" destination="ejN-3A-Kxr" id="7s7-KI-gQX"/>
+                        <outlet property="urineOutTxtFld" destination="fPs-Ae-FgL" id="MA7-bJ-spj"/>
+                        <outlet property="vzvTxtFld" destination="o60-5X-8mE" id="K7z-3L-8hk"/>
+                        <outlet property="wtTxtFld" destination="PAC-lv-3IK" id="8Wt-4W-Qw4"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WDf-O8-CCY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
