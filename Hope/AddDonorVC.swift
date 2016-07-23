@@ -59,9 +59,12 @@ class AddDonorVC: UITableViewController {
     @IBOutlet weak var estTimeRetrievTxtFld: MaterialTxtFld!
     @IBOutlet weak var typeOfPerfusionTxtFld: MaterialTxtFld!
     
+    
+    var dateFormatter : NSDateFormatter!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let tap = UITapGestureRecognizer(target: self, action: Selector("dismissKeyBoard"))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(AddDonorVC.dismissKeyBoard))
         view.addGestureRecognizer(tap)
 
     }
@@ -78,6 +81,11 @@ class AddDonorVC: UITableViewController {
         let entity = NSEntityDescription.entityForName("Donor", inManagedObjectContext: context)
         
         let donor = Donor(entity: entity!, insertIntoManagedObjectContext: context)
+        
+        dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = .MediumStyle
+        donor.date = dateFormatter.stringFromDate(NSDate())
+        
         
         if let location = locationTxtFld.text where location != "" {
             donor.location = location

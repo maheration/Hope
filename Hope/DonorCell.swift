@@ -23,7 +23,13 @@ class DonorCell: UITableViewCell {
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+    }
+    
+    
+    func configureCell(donor: Donor, row: Int) {
+        
+        self.titleLbl.text = "Donor" + "\(row + 1)"
+        self.dateLbl.text = donor.date
     }
 
 }

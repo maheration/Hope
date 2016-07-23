@@ -56,8 +56,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if let cell = tableView.dequeueReusableCellWithIdentifier("DonorCell") as? DonorCell {
             
             let donor = donors[indexPath.row]
-            print(donor)
-            cell.titleLbl.text = "donor"+"\(indexPath.row + 1)"
+            
+            cell.configureCell(donor, row: indexPath.row)
+            
             return cell
         }
         

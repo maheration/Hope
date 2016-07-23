@@ -55,5 +55,6 @@ extension Donor {
     @NSManaged var urineOutPut: String?
     @NSManaged var vzvSerology: String?
     @NSManaged var weight: String?
+    @NSManaged var date: String?
 
 }

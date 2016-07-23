@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4850EBFC1D43C13B003B544E /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4850EBFB1D43C13B003B544E /* MaterialButton.swift */; };
-		4857C0B21D43D6400044C8A6 /* Donor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4857C0B11D43D6400044C8A6 /* Donor+CoreDataProperties.swift */; };
 		4857C0B41D43D6510044C8A6 /* Donor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4857C0B31D43D6510044C8A6 /* Donor.swift */; };
+		487ADE481D4429DF004BE57D /* Donor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487ADE471D4429DF004BE57D /* Donor+CoreDataProperties.swift */; };
 		489B18531D42C9E000FFBD92 /* MaterialTxtFld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489B18521D42C9E000FFBD92 /* MaterialTxtFld.swift */; };
 		48F18B0C1D429C1B000508A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F18B0B1D429C1B000508A0 /* AppDelegate.swift */; };
 		48F18B0E1D429C1B000508A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F18B0D1D429C1B000508A0 /* ViewController.swift */; };
@@ -25,8 +25,8 @@
 
 /* Begin PBXFileReference section */
 		4850EBFB1D43C13B003B544E /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
-		4857C0B11D43D6400044C8A6 /* Donor+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Donor+CoreDataProperties.swift"; path = "../Donor+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4857C0B31D43D6510044C8A6 /* Donor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Donor.swift; path = ../Donor.swift; sourceTree = "<group>"; };
+		487ADE471D4429DF004BE57D /* Donor+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Donor+CoreDataProperties.swift"; path = "../Donor+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		489B18521D42C9E000FFBD92 /* MaterialTxtFld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTxtFld.swift; sourceTree = "<group>"; };
 		48F18B081D429C1B000508A0 /* Hope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F18B0B1D429C1B000508A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,8 +88,8 @@
 		48F18B201D42A086000508A0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				487ADE471D4429DF004BE57D /* Donor+CoreDataProperties.swift */,
 				4857C0B31D43D6510044C8A6 /* Donor.swift */,
-				4857C0B11D43D6400044C8A6 /* Donor+CoreDataProperties.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -147,6 +147,7 @@
 				TargetAttributes = {
 					48F18B071D429C1B000508A0 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = J46335Z6MG;
 					};
 				};
 			};
@@ -193,8 +194,8 @@
 				489B18531D42C9E000FFBD92 /* MaterialTxtFld.swift in Sources */,
 				4850EBFC1D43C13B003B544E /* MaterialButton.swift in Sources */,
 				48F18B261D42A1D4000508A0 /* MaterialView.swift in Sources */,
+				487ADE481D4429DF004BE57D /* Donor+CoreDataProperties.swift in Sources */,
 				48F18B0C1D429C1B000508A0 /* AppDelegate.swift in Sources */,
-				4857C0B21D43D6400044C8A6 /* Donor+CoreDataProperties.swift in Sources */,
 				4857C0B41D43D6510044C8A6 /* Donor.swift in Sources */,
 				48F18B141D429C1B000508A0 /* Hope.xcdatamodeld in Sources */,
 			);
@@ -311,10 +312,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Hope/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.creativeapps.Hope;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -322,10 +326,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Hope/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.creativeapps.Hope;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

@@ -72,7 +72,7 @@
                                                     <rect key="frame" x="0.0" y="5" width="600" height="50"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donor1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZJ-Fm-CkY">
-                                                            <rect key="frame" x="10" y="15" width="315.5" height="21"/>
+                                                            <rect key="frame" x="20" y="15" width="315.5" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="315.5" id="E7l-TK-lGB"/>
                                                                 <constraint firstAttribute="height" constant="21" id="PvT-63-73T"/>
@@ -82,7 +82,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="June, 7th" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZc-nE-YUD">
-                                                            <rect key="frame" x="365" y="15" width="225" height="20"/>
+                                                            <rect key="frame" x="355" y="15" width="225" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="1Gw-gM-UQ6"/>
                                                                 <constraint firstAttribute="width" constant="225" id="n1b-pA-cGW"/>
@@ -94,8 +94,8 @@
                                                     </subviews>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstItem="SZJ-Fm-CkY" firstAttribute="leading" secondItem="SXH-LD-8N5" secondAttribute="leading" constant="10" id="FO7-PF-cry"/>
-                                                        <constraint firstAttribute="trailing" secondItem="JZc-nE-YUD" secondAttribute="trailing" constant="10" id="bc0-Jb-ZtY"/>
+                                                        <constraint firstItem="SZJ-Fm-CkY" firstAttribute="leading" secondItem="SXH-LD-8N5" secondAttribute="leading" constant="20" id="FO7-PF-cry"/>
+                                                        <constraint firstAttribute="trailing" secondItem="JZc-nE-YUD" secondAttribute="trailing" constant="20" id="bc0-Jb-ZtY"/>
                                                         <constraint firstItem="JZc-nE-YUD" firstAttribute="centerY" secondItem="SXH-LD-8N5" secondAttribute="centerY" id="yLg-IC-7yi"/>
                                                         <constraint firstItem="SZJ-Fm-CkY" firstAttribute="centerY" secondItem="SXH-LD-8N5" secondAttribute="centerY" id="ygM-iU-EbK"/>
                                                     </constraints>
