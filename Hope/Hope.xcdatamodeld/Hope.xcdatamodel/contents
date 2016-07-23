@@ -44,6 +44,6 @@
         <attribute name="weight" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Donor" positionX="-63" positionY="-18" width="128" height="660"/>
+        <element name="Donor" positionX="-63" positionY="135" width="128" height="660"/>
     </elements>
 </model>

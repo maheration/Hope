@@ -77,5 +77,178 @@ class AddDonorVC: UITableViewController {
         
         let donor = Donor(entity: entity!, insertIntoManagedObjectContext: context)
         
+        if let location = locationTxtFld.text where location != "" {
+            donor.location = location
+        }
+        
+        if let bloodType = bloodTypeTxtFld.text where bloodType != "" {
+            donor.bloodType = bloodType
+        }
+        
+        if let wt = wtTxtFld.text where wt != "" {
+            donor.weight = wt
+        }
+        
+        if let ht = htTxtFld.text where ht != "" {
+            donor.height = ht
+        }
+        
+        if let deathCause = deathCauseTxtFld.text where deathCause != "" {
+            donor.deathCause = deathCause
+        }
+        
+        if let radio = imagingTxtFld.text where radio != "" {
+            donor.radioImaging = radio
+        }
+        
+        if let nephToxicDrug = nephrToxicTxtFld.text where nephToxicDrug != "" {
+            donor.nephroToxicDrugs = nephToxicDrug
+        }
+        
+        if let persisHypoBP = persistHypoBPTxtFld.text where persisHypoBP != "" {
+            donor.persistHypoBp = persisHypoBP
+        }
+        
+        if let urineOP = urineOutTxtFld.text where urineOP != "" {
+            donor.urineOutPut = urineOP
+        }
+        
+        if let transfusion = transfusionTxtFld.text where transfusion != "" {
+            donor.transfusion = transfusion
+        }
+        
+        if let dic = dicTxtFld.text where dic != "" {
+            donor.dic = dic
+        }
+        
+        if let downTime = downTimeTxtFld.text where downTime != "" {
+            donor.downTime = downTime
+        }
+        
+        if let fever = feverInfecTxtFld.text where fever != "" {
+            donor.feverOrSeriousDis = fever
+        }
+        
+        if let preHTN = preHtnTxtFld.text where preHTN != "" {
+            donor.preHtn = preHTN
+        }
+        
+        if let preDM = preDmTxtFld.text where preDM != "" {
+            donor.preDM = preDM
+        }
+        
+        if let preSmoking = preSmokingTxtFld.text where preSmoking != "" {
+            donor.preSmoking = preSmoking
+        }
+        
+        if let preIVDU = preIVDUTxtFld.text where preIVDU != "" {
+            donor.preIVDU = preIVDU
+        }
+        
+        if let preCancer = preMalignancyTxtFld.text where preCancer != "" {
+            donor.preMalignancy = preCancer
+        }
+        
+        if let preMed = preMedsTxtFld.text where preMed != "" {
+            donor.preMeds = preMed
+        }
+        
+        if let preFamily = preFamilyHxTxtFld.text where preFamily != "" {
+            donor.preFamilyhx = preFamily
+        }
+        
+        if let preSocial = preSocialHxTxtFld.text where preSocial != "" {
+            donor.preSocialhx = preSocial
+        }
+        
+        if let crtPre = crtPreTxtFld.text where crtPre != "" {
+            donor.crtPre = crtPre
+        }
+        
+        if let crtPeak = peakCrtTxtFld.text where crtPeak != "" {
+            donor.crtPeak = crtPeak
+        }
+        
+        if let crtAdm = admCrtTxtFld.text where crtAdm != "" {
+            donor.crtAdmition = crtAdm
+        }
+        
+        if let crtDeath = deathCrtTxtFld.text where crtDeath != "" {
+            donor.crtDeath = crtDeath
+        }
+        
+        if let hiv = hivTxtFld.text where hiv != "" {
+            donor.hivSerology = hiv
+        }
+        
+        if let hbv = hbvTxtFld.text where hbv != "" {
+            donor.hbvSerology = hbv
+        }
+        
+        if let hcv = hcvTxtFld.text where hcv != "" {
+            donor.hcvSerology = hcv
+        }
+        
+        if let ebv = ebvTxtFld.text where ebv != "" {
+            donor.ebvSerology = ebv
+        }
+        
+        if let cmv = cmvTxtFld.text where cmv != "" {
+            donor.cmvSerology = cmv
+        }
+        
+        if let vzv = vzvTxtFld.text where vzv != "" {
+            donor.vzvSerology = vzv
+        }
+        
+        if let hsv = hsvTxtFld.text where hsv != "" {
+            donor.hsvSerology = hsv
+        }
+        
+        if let syphlis = syphlisTxtFld.text where syphlis != "" {
+            donor.syphlisSerology = syphlis
+        }
+        
+        if let uA = urineAnaylysisTxtFld.text where uA != "" {
+            donor.urineAnalysis = uA
+        }
+        
+        if let bx = biopsyTxtFld.text where bx != "" {
+            donor.biopsy = bx
+        }
+        
+        if let retrievalTime = estTimeRetrievTxtFld.text where retrievalTime != "" {
+            donor.retrievalTime = retrievalTime
+        }
+        
+        if let perfType = typeOfPerfusionTxtFld.text where perfType != "" {
+            donor.perfusionType = perfType
+        }
+        
+        
+        if heartSwitch.on {
+            donor.heartOrgan = true
+        } else {
+            donor.heartOrgan = false
+        }
+        
+        if lungSwitch.on {
+            donor.lungOrgan = true
+        } else {
+            donor.lungOrgan = false
+        }
+        
+        if liverSwitch.on {
+            donor.liverOrgan = true
+        } else {
+            donor.liverOrgan = false
+        }
+        
+        if pancrSwitch.on {
+            donor.pancreaseOrgan = true
+        } else {
+            donor.pancreaseOrgan = false
+        }
+        
     }
 }
