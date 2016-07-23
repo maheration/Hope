@@ -61,6 +61,8 @@ class AddDonorVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: self, action: Selector("dismissKeyBoard"))
+        view.addGestureRecognizer(tap)
 
     }
 
@@ -259,6 +261,11 @@ class AddDonorVC: UITableViewController {
         }
         
         dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+    
+    func dismissKeyBoard() {
+        view.endEditing(true)
         
     }
 }
