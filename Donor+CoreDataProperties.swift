@@ -2,7 +2,7 @@
 //  Donor+CoreDataProperties.swift
 //  Hope
 //
-//  Created by Maher Aldemerdash on 2016-07-23.
+//  Created by Maher Aldemerdash on 2016-07-26.
 //  Copyright © 2016 Maher Aldemerdash. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -21,6 +21,7 @@ extension Donor {
     @NSManaged var crtDeath: String?
     @NSManaged var crtPeak: String?
     @NSManaged var crtPre: String?
+    @NSManaged var date: String?
     @NSManaged var deathCause: String?
     @NSManaged var dic: String?
     @NSManaged var downTime: String?
@@ -55,6 +56,12 @@ extension Donor {
     @NSManaged var urineOutPut: String?
     @NSManaged var vzvSerology: String?
     @NSManaged var weight: String?
-    @NSManaged var date: String?
+    @NSManaged var age: String?
+    @NSManaged var gender: String?
+    @NSManaged var ethnicity: String?
+    @NSManaged var dcd: String?
+    @NSManaged var sexualHx: String?
+    @NSManaged var incarcerationHx: String?
+    @NSManaged var generalComment: String?
 
 }

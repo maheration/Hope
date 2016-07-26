@@ -105,14 +105,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
-//    let appDel:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-//    let context:NSManagedObjectContext = appDel.managedObjectContext
-//    context.deleteObject(myData[indexPath.row] )
-//    myData.removeAtIndex(indexPath.row)
-//    do {
-//    try context.save()
-//    } catch _ {
-//    }
+
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let donor = donors[indexPath.row]
+        performSegueWithIdentifier("toDetailVC", sender: donor)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toDetailVC" {
+            
+            let destinVC = segue.destinationViewController as! DetailTableViewController
+            destinVC.donorPressed = sender as! Donor
+            
+            
+        }
+    }
     
 
 }

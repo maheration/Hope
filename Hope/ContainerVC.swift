@@ -10,7 +10,6 @@ import UIKit
 
 class ContainerVC: UIViewController {
     
-    @IBOutlet weak var testLbl : UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()

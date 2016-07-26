@@ -21,6 +21,10 @@ class AddDonorVC: UITableViewController {
     @IBOutlet weak var urineOutTxtFld: MaterialTxtFld!
     @IBOutlet weak var transfusionTxtFld: MaterialTxtFld!
     @IBOutlet weak var dicTxtFld: MaterialTxtFld!
+    @IBOutlet weak var ageTxtFld: MaterialTxtFld!
+    @IBOutlet weak var genderTxtFld: MaterialTxtFld!
+    @IBOutlet weak var ethnicityTxtFld: MaterialTxtFld!
+    @IBOutlet weak var dcdTxtFld: MaterialTxtFld!
     
     @IBOutlet weak var downTimeTxtFld: MaterialTxtFld!
     @IBOutlet weak var feverInfecTxtFld: MaterialTxtFld!
@@ -33,6 +37,8 @@ class AddDonorVC: UITableViewController {
     @IBOutlet weak var preMedsTxtFld: MaterialTxtFld!
     @IBOutlet weak var preFamilyHxTxtFld: MaterialTxtFld!
     @IBOutlet weak var preSocialHxTxtFld: MaterialTxtFld!
+    @IBOutlet weak var incarcerationTxtFld: MaterialTxtFld!
+    @IBOutlet weak var sexualTxtFld: MaterialTxtFld!
     
     @IBOutlet weak var crtPreTxtFld: MaterialTxtFld!
     @IBOutlet weak var peakCrtTxtFld: MaterialTxtFld!
@@ -58,6 +64,7 @@ class AddDonorVC: UITableViewController {
     
     @IBOutlet weak var estTimeRetrievTxtFld: MaterialTxtFld!
     @IBOutlet weak var typeOfPerfusionTxtFld: MaterialTxtFld!
+    @IBOutlet weak var generalCommentTxtFld: MaterialTxtFld!
     
     
     var dateFormatter : NSDateFormatter!
@@ -266,6 +273,35 @@ class AddDonorVC: UITableViewController {
             try context.save()
         } catch {
             print("failed save")
+        }
+        
+        if let age = ageTxtFld.text where age != "" {
+            donor.age = age
+        }
+        
+        if let sexualHx = sexualTxtFld.text where sexualHx != "" {
+            donor.sexualHx = sexualHx
+        }
+        
+        if let ethn = ethnicityTxtFld.text where ethn != "" {
+            donor.ethnicity = ethn
+        }
+        
+        if let gender = genderTxtFld.text where gender != "" {
+            donor.gender = gender
+        }
+        
+        if let dcd = dcdTxtFld.text where dcd != "" {
+            donor.dcd = dcd
+        }
+        
+        if let incarceration = incarcerationTxtFld.text where incarceration != "" {
+            donor.incarcerationHx = incarceration
+        }
+        
+        if let generComment = generalCommentTxtFld.text where generComment != "" {
+         
+            donor.generalComment = generComment
         }
         
         dismissViewControllerAnimated(true, completion: nil)
