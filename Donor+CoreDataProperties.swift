@@ -2,7 +2,7 @@
 //  Donor+CoreDataProperties.swift
 //  Hope
 //
-//  Created by Maher Aldemerdash on 2016-07-26.
+//  Created by Maher Aldemerdash on 2016-07-27.
 //  Copyright © 2016 Maher Aldemerdash. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -14,6 +14,7 @@ import CoreData
 
 extension Donor {
 
+    @NSManaged var age: String?
     @NSManaged var biopsy: String?
     @NSManaged var bloodType: String?
     @NSManaged var cmvSerology: String?
@@ -22,17 +23,22 @@ extension Donor {
     @NSManaged var crtPeak: String?
     @NSManaged var crtPre: String?
     @NSManaged var date: String?
+    @NSManaged var dcd: String?
     @NSManaged var deathCause: String?
     @NSManaged var dic: String?
     @NSManaged var downTime: String?
     @NSManaged var ebvSerology: String?
+    @NSManaged var ethnicity: String?
     @NSManaged var feverOrSeriousDis: String?
+    @NSManaged var gender: String?
+    @NSManaged var generalComment: String?
     @NSManaged var hbvSerology: String?
     @NSManaged var hcvSerology: String?
     @NSManaged var heartOrgan: NSNumber?
     @NSManaged var height: String?
     @NSManaged var hivSerology: String?
     @NSManaged var hsvSerology: String?
+    @NSManaged var incarcerationHx: String?
     @NSManaged var liverOrgan: NSNumber?
     @NSManaged var location: String?
     @NSManaged var lungOrgan: NSNumber?
@@ -50,18 +56,13 @@ extension Donor {
     @NSManaged var preSocialhx: String?
     @NSManaged var radioImaging: String?
     @NSManaged var retrievalTime: String?
+    @NSManaged var sexualHx: String?
     @NSManaged var syphlisSerology: String?
     @NSManaged var transfusion: String?
     @NSManaged var urineAnalysis: String?
     @NSManaged var urineOutPut: String?
     @NSManaged var vzvSerology: String?
     @NSManaged var weight: String?
-    @NSManaged var age: String?
-    @NSManaged var gender: String?
-    @NSManaged var ethnicity: String?
-    @NSManaged var dcd: String?
-    @NSManaged var sexualHx: String?
-    @NSManaged var incarcerationHx: String?
-    @NSManaged var generalComment: String?
+    @NSManaged var pressors: String?
 
 }

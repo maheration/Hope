@@ -147,7 +147,7 @@
         <scene sceneID="7aQ-IT-tzH">
             <objects>
                 <tableViewController id="30X-1J-pl5" customClass="DetailTableViewController" customModule="Hope" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="08z-qx-k62">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="08z-qx-k62">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -158,11 +158,25 @@
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="s4z-6Z-3zH">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
                                 </imageView>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQK-DT-HLt">
-                                    <rect key="frame" x="8" y="23" width="46" height="30"/>
-                                    <state key="normal" title="Button"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQK-DT-HLt">
+                                    <rect key="frame" x="8" y="20" width="47" height="36"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="47" id="aph-4V-ImR"/>
+                                        <constraint firstAttribute="height" constant="36" id="ie3-au-wkN"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                    <state key="normal" title="BACK">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="backBtnPressed:" destination="30X-1J-pl5" eventType="touchUpInside" id="pt1-o7-5Qh"/>
+                                    </connections>
                                 </button>
                             </subviews>
+                            <constraints>
+                                <constraint firstItem="SQK-DT-HLt" firstAttribute="top" secondItem="o6B-lm-zY3" secondAttribute="top" constant="20" id="NRE-zH-puo"/>
+                                <constraint firstItem="SQK-DT-HLt" firstAttribute="leading" secondItem="o6B-lm-zY3" secondAttribute="leading" constant="8" id="P44-IM-VZ0"/>
+                            </constraints>
                         </view>
                         <sections>
                             <tableViewSection headerTitle="Donor Details" id="55U-Kv-buJ">
@@ -585,7 +599,7 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dA4-E2-Thd">
                                                             <rect key="frame" x="0.0" y="215" width="342" height="23"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transfusions:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYa-P8-4xx">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transfusions:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="LYa-P8-4xx">
                                                                     <rect key="frame" x="0.0" y="0.0" width="82" height="23"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="21" id="AKZ-ES-cS0"/>
@@ -737,14 +751,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="500"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eP3-O5-8yI">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eP3-O5-8yI">
                                                     <rect key="frame" x="129" y="50" width="342" height="400"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rhj-Qf-ped">
-                                                            <rect key="frame" x="0.0" y="0.0" width="342" height="103"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rhj-Qf-ped">
+                                                            <rect key="frame" x="0.0" y="0.0" width="342" height="113"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Medication:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWf-DK-Ei7">
-                                                                    <rect key="frame" x="0.0" y="40" width="166" height="24"/>
+                                                                    <rect key="frame" x="0.0" y="45" width="171" height="24"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="21" id="yu0-Zt-xKg"/>
                                                                     </constraints>
@@ -758,7 +772,7 @@
                                                                     </variation>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nsaids, Lisinopril, BB" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="CTF-wR-T8U">
-                                                                    <rect key="frame" x="176" y="40" width="166" height="24"/>
+                                                                    <rect key="frame" x="171" y="45" width="171" height="24"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="300" id="ewR-Gr-JBv"/>
                                                                     </constraints>
@@ -774,10 +788,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aIG-dJ-Acf">
-                                                            <rect key="frame" x="0.0" y="123" width="342" height="18"/>
+                                                            <rect key="frame" x="0.0" y="123" width="342" height="28"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Malignancy:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffI-JL-hHV">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="171" height="18"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="171" height="28"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="21" id="2NY-hz-4Hr"/>
                                                                     </constraints>
@@ -791,7 +805,7 @@
                                                                     </variation>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="prostate cancer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="e65-9B-PvX">
-                                                                    <rect key="frame" x="171" y="0.0" width="171" height="18"/>
+                                                                    <rect key="frame" x="171" y="0.0" width="171" height="28"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="300" id="aaD-UA-vvh"/>
                                                                     </constraints>
@@ -807,10 +821,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JhU-ya-ASS">
-                                                            <rect key="frame" x="0.0" y="161" width="342" height="19"/>
+                                                            <rect key="frame" x="0.0" y="161" width="342" height="29"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DM:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vW6-XT-FoK">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="134" height="19"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="134" height="29"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="21" id="Al7-PC-T9K"/>
                                                                         <constraint firstAttribute="width" constant="134" id="HG1-pd-KDg"/>
@@ -825,7 +839,7 @@
                                                                     </variation>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes. A1C 7%" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Zxk-tN-Xc8">
-                                                                    <rect key="frame" x="144" y="0.0" width="198" height="19"/>
+                                                                    <rect key="frame" x="144" y="0.0" width="198" height="29"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="300" id="rhD-wq-0wS"/>
                                                                     </constraints>
@@ -841,10 +855,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="GXe-7H-53i">
-                                                            <rect key="frame" x="0.0" y="200" width="342" height="18"/>
+                                                            <rect key="frame" x="0.0" y="200" width="342" height="28"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IVDU" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cu-8w-QMi">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="18"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="28"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="21" id="AeF-up-QxS"/>
                                                                     </constraints>
@@ -858,7 +872,7 @@
                                                                     </variation>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="a8J-WH-cCX">
-                                                                    <rect key="frame" x="90" y="0.0" width="74" height="18"/>
+                                                                    <rect key="frame" x="90" y="0.0" width="74" height="28"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="300" id="4hD-nE-97s"/>
                                                                     </constraints>
@@ -872,7 +886,7 @@
                                                                     </variation>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HTN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4s7-ww-m3b">
-                                                                    <rect key="frame" x="179" y="0.0" width="75" height="18"/>
+                                                                    <rect key="frame" x="179" y="0.0" width="75" height="28"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="21" id="Miy-My-VoU"/>
                                                                     </constraints>
@@ -886,7 +900,7 @@
                                                                     </variation>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="140/56" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="jKe-fS-s1b">
-                                                                    <rect key="frame" x="268" y="0.0" width="74" height="18"/>
+                                                                    <rect key="frame" x="268" y="0.0" width="74" height="28"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="300" id="iIz-jr-Hpr"/>
                                                                     </constraints>
@@ -965,40 +979,11 @@
                                                                 <constraint firstAttribute="height" constant="23" id="8qC-ky-4ZP"/>
                                                             </constraints>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GJS-qw-3vp">
-                                                            <rect key="frame" x="0.0" y="281" width="342" height="47"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="GJS-qw-3vp">
+                                                            <rect key="frame" x="0.0" y="271" width="342" height="47"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Donwtime:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZf-QX-eYa">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="82" height="47"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" constant="21" id="Ka0-XO-grS"/>
-                                                                    </constraints>
-                                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
-                                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                    <variation key="default">
-                                                                        <mask key="constraints">
-                                                                            <exclude reference="Ka0-XO-grS"/>
-                                                                        </mask>
-                                                                    </variation>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1 hour" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="EQT-aK-zYx">
-                                                                    <rect key="frame" x="106" y="0.0" width="51" height="47"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" constant="300" id="Mw5-C5-PTo"/>
-                                                                        <constraint firstAttribute="width" constant="51" id="gr6-9h-dGZ"/>
-                                                                    </constraints>
-                                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                    <variation key="default">
-                                                                        <mask key="constraints">
-                                                                            <exclude reference="Mw5-C5-PTo"/>
-                                                                        </mask>
-                                                                    </variation>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Incarceration:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIA-Uf-tHg">
-                                                                    <rect key="frame" x="182" y="0.0" width="110" height="47"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incarceration:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIA-Uf-tHg">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="171" height="47"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="110" id="0zD-xl-XPA"/>
                                                                         <constraint firstAttribute="height" constant="21" id="JFF-7Y-A4B"/>
@@ -1013,7 +998,7 @@
                                                                     </variation>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="my1-E6-0rL">
-                                                                    <rect key="frame" x="316" y="0.0" width="26" height="47"/>
+                                                                    <rect key="frame" x="171" y="0.0" width="171" height="47"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="26" id="7fB-6p-D7V"/>
                                                                         <constraint firstAttribute="width" constant="300" id="Piq-1C-2Yy"/>
@@ -1032,11 +1017,11 @@
                                                                 <constraint firstAttribute="height" constant="47" id="rzm-wC-XME"/>
                                                             </constraints>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="svX-5i-HSL">
-                                                            <rect key="frame" x="0.0" y="348" width="342" height="9"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="svX-5i-HSL">
+                                                            <rect key="frame" x="0.0" y="328" width="342" height="39"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other Social hx:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vf-7B-3ug">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="151" height="9"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="171" height="39"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="21" id="8KM-ix-HIi"/>
                                                                     </constraints>
@@ -1050,7 +1035,7 @@
                                                                     </variation>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 beers/week" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="GPX-PF-Sod">
-                                                                    <rect key="frame" x="191" y="0.0" width="151" height="9"/>
+                                                                    <rect key="frame" x="171" y="0.0" width="171" height="39"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="300" id="ek8-Y6-2Fu"/>
                                                                     </constraints>
@@ -1716,7 +1701,7 @@
                                                                     </variation>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="FJc-k2-lJZ">
-                                                                    <rect key="frame" x="316" y="0.0" width="26" height="24"/>
+                                                                    <rect key="frame" x="316" y="1" width="26" height="24"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="24" id="1ix-w8-KDA"/>
                                                                         <constraint firstAttribute="width" constant="26" id="5QV-Bw-R5G"/>
@@ -1893,7 +1878,7 @@
                                                                     </variation>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="kfdks;lf ;lk; skg ;lsk lsg ;dlsfk ;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="AmN-yB-EC0">
-                                                                    <rect key="frame" x="85" y="0.0" width="257" height="78"/>
+                                                                    <rect key="frame" x="85" y="39" width="257" height="0.0"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="78" id="BSe-uk-hta"/>
                                                                         <constraint firstAttribute="width" constant="206" id="M81-wD-mDT"/>
@@ -1933,7 +1918,55 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="UKD-Cc-33L"/>
                     <connections>
-                        <outlet property="locationLbl" destination="2Fh-Zy-BH5" id="Ej2-uz-dj5"/>
+                        <outlet property="aboLbl" destination="3ZH-NB-VCE" id="UHL-c9-q50"/>
+                        <outlet property="ageLbl" destination="MFp-AI-G78" id="2nX-Ah-zFJ"/>
+                        <outlet property="bxLbl" destination="HQl-AC-Bna" id="4Bt-gU-w8S"/>
+                        <outlet property="causeOfDeathLbl" destination="ydy-Md-K49" id="zih-4j-lB7"/>
+                        <outlet property="cmvLbl" destination="MJu-3n-jut" id="IFX-14-5qG"/>
+                        <outlet property="commentsLbl" destination="AmN-yB-EC0" id="OHl-ei-Stb"/>
+                        <outlet property="crtAdmLbl" destination="R8r-76-YdI" id="s4N-aa-CGr"/>
+                        <outlet property="crtDeathLbl" destination="ZQo-Le-7cu" id="KxG-7k-n7n"/>
+                        <outlet property="crtPeakLbl" destination="ybJ-Rn-Gwj" id="tds-Ds-zEm"/>
+                        <outlet property="crtPreLbl" destination="Zze-Ye-UUT" id="4Hp-DQ-0A5"/>
+                        <outlet property="dicLbl" destination="E0O-ly-ZhR" id="Wie-C2-Qv7"/>
+                        <outlet property="dmLbl" destination="Zxk-tN-Xc8" id="fuz-5S-Her"/>
+                        <outlet property="downTimeLbl" destination="2nB-Ku-K69" id="nrG-Bd-rEl"/>
+                        <outlet property="ebvLbl" destination="Zol-f7-P2R" id="QfN-c5-leA"/>
+                        <outlet property="ethnLbl" destination="vU9-AJ-KuZ" id="U2e-VZ-o0z"/>
+                        <outlet property="familyHxLbl" destination="Pew-az-IXK" id="Jtl-hz-bnm"/>
+                        <outlet property="genderLbl" destination="yCV-np-WdH" id="GKP-e6-Epa"/>
+                        <outlet property="hbvLbl" destination="Ao5-rg-QX7" id="JYn-uN-XQH"/>
+                        <outlet property="hcvLbl" destination="HOu-Hh-K2Z" id="M0b-qY-ZgA"/>
+                        <outlet property="hivLbl" destination="fWo-j0-7rz" id="V6b-Ge-Kac"/>
+                        <outlet property="hsvLbl" destination="sCd-yi-FLy" id="fIH-if-lGd"/>
+                        <outlet property="htLbl" destination="rab-tG-9lb" id="jcj-7c-u3x"/>
+                        <outlet property="htnLbl" destination="jKe-fS-s1b" id="wVf-xa-dwG"/>
+                        <outlet property="imgingLbl" destination="9x1-tU-p8K" id="gXf-PO-Wqq"/>
+                        <outlet property="incarcerationLbl" destination="my1-E6-0rL" id="hs3-Hx-2pR"/>
+                        <outlet property="ivduLbl" destination="a8J-WH-cCX" id="DpT-Ve-E4t"/>
+                        <outlet property="locationLbl" destination="K0Z-m1-keM" id="ki0-HE-fMF"/>
+                        <outlet property="malignLbl" destination="e65-9B-PvX" id="beo-6V-d2o"/>
+                        <outlet property="medsLbl" destination="CTF-wR-T8U" id="WIW-pN-gs4"/>
+                        <outlet property="nephrotoxicLbl" destination="rrb-oG-1bj" id="9zC-FQ-zil"/>
+                        <outlet property="otherHeartLbl" destination="Lcy-O1-A1N" id="RxE-dJ-Qrx"/>
+                        <outlet property="otherLiverLbl" destination="Izy-6X-Hrt" id="jUl-qn-Bs5"/>
+                        <outlet property="otherLungLbl" destination="FJc-k2-lJZ" id="gBC-Tg-IgE"/>
+                        <outlet property="otherPancrLbl" destination="yHS-6S-AcP" id="cya-1f-Q2Z"/>
+                        <outlet property="otherSocialLbl" destination="GPX-PF-Sod" id="ycv-hT-YaF"/>
+                        <outlet property="perfusionTypeLbl" destination="XwP-sm-Gey" id="Dr8-Yc-cvB"/>
+                        <outlet property="persisHypoBpLbl" destination="piS-In-pqj" id="YkU-Vk-Qfm"/>
+                        <outlet property="pressorsLbl" destination="v0o-1J-74Q" id="Zhr-T9-mGC"/>
+                        <outlet property="retrievalTimeLbl" destination="ifX-ov-5Ga" id="dEi-h7-CmO"/>
+                        <outlet property="seriousInfecLbl" destination="R1B-1K-Skn" id="vLT-KB-bdu"/>
+                        <outlet property="sexualHxLbl" destination="9gD-bQ-8W1" id="LHb-Qq-KUu"/>
+                        <outlet property="smokingLbl" destination="8PX-D5-eu1" id="xsQ-2j-b2D"/>
+                        <outlet property="syphlisLbl" destination="fOu-Kr-DLJ" id="Mib-L7-JBX"/>
+                        <outlet property="transfusionLbl" destination="GV1-S5-Zjj" id="fgB-t8-mEb"/>
+                        <outlet property="typeLbl" destination="kgY-Vm-Zq2" id="gtb-a0-zJM"/>
+                        <outlet property="uaLbl" destination="pek-j8-aY2" id="V0R-w6-94d"/>
+                        <outlet property="uopLbl" destination="sfp-JG-Cce" id="bdQ-TY-Kvx"/>
+                        <outlet property="vzvLbl" destination="ldl-sq-fOA" id="nkZ-sb-szP"/>
+                        <outlet property="wtLbl" destination="VbZ-ex-UDh" id="czj-fv-dNU"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EEo-kZ-GTh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2798,6 +2831,7 @@
                         <outlet property="preMedsTxtFld" destination="Wk8-qe-k7B" id="76I-lz-VL7"/>
                         <outlet property="preSmokingTxtFld" destination="HHM-Il-oqz" id="NgG-M6-mHi"/>
                         <outlet property="preSocialHxTxtFld" destination="MBn-Cw-OEe" id="Znn-XT-Bob"/>
+                        <outlet property="pressorsTxtFld" destination="CHw-IL-WHG" id="OO3-8Y-njE"/>
                         <outlet property="sexualTxtFld" destination="2mi-V2-N0d" id="IjU-Je-p2Y"/>
                         <outlet property="syphlisTxtFld" destination="o5g-M2-XDW" id="dzo-kC-nH7"/>
                         <outlet property="transfusionTxtFld" destination="tfK-3x-u5f" id="sBA-4r-75O"/>

@@ -10,6 +10,10 @@ import UIKit
 import CoreData
 
 class AddDonorVC: UITableViewController {
+    
+    
+    @IBOutlet weak var pressorsTxtFld: MaterialTxtFld!
+    
     @IBOutlet weak var locationTxtFld: MaterialTxtFld!
     @IBOutlet weak var bloodTypeTxtFld: MaterialTxtFld!
     @IBOutlet weak var wtTxtFld: MaterialTxtFld!
@@ -302,6 +306,10 @@ class AddDonorVC: UITableViewController {
         if let generComment = generalCommentTxtFld.text where generComment != "" {
          
             donor.generalComment = generComment
+        }
+        
+        if let pressors = pressorsTxtFld.text where pressors != "" {
+            donor.pressors = pressors
         }
         
         dismissViewControllerAnimated(true, completion: nil)
