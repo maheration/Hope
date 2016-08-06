@@ -11,6 +11,8 @@ import CoreData
 
 class AddDonorVC: UITableViewController {
     
+    var transferredDonor : Donor?
+    
     
     @IBOutlet weak var pressorsTxtFld: MaterialTxtFld!
     
@@ -77,6 +79,7 @@ class AddDonorVC: UITableViewController {
         super.viewDidLoad()
         let tap = UITapGestureRecognizer(target: self, action: #selector(AddDonorVC.dismissKeyBoard))
         view.addGestureRecognizer(tap)
+        
 
     }
 
@@ -271,14 +274,7 @@ class AddDonorVC: UITableViewController {
             donor.pancreaseOrgan = false
         }
         
-        context.insertObject(donor)
-        
-        do {
-            try context.save()
-        } catch {
-            print("failed save")
-        }
-        
+
         if let age = ageTxtFld.text where age != "" {
             donor.age = age
         }
@@ -311,6 +307,15 @@ class AddDonorVC: UITableViewController {
         if let pressors = pressorsTxtFld.text where pressors != "" {
             donor.pressors = pressors
         }
+        
+        context.insertObject(donor)
+        
+        do {
+            try context.save()
+        } catch {
+            print("failed save")
+        }
+        
         
         dismissViewControllerAnimated(true, completion: nil)
         

@@ -11,7 +11,9 @@
 		4857C0B41D43D6510044C8A6 /* Donor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4857C0B31D43D6510044C8A6 /* Donor.swift */; };
 		487BF64F1D478818009F8B1B /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487BF64E1D478818009F8B1B /* DetailTableViewController.swift */; };
 		487BF6511D47925E009F8B1B /* testImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487BF6501D47925E009F8B1B /* testImage.swift */; };
+		488D73791D542906002D4C39 /* EditTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488D73781D542906002D4C39 /* EditTableVC.swift */; };
 		489B18531D42C9E000FFBD92 /* MaterialTxtFld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489B18521D42C9E000FFBD92 /* MaterialTxtFld.swift */; };
+		48E1077D1D54D01B0016E92A /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E1077C1D54D01B0016E92A /* DataService.swift */; };
 		48E916211D49788100BF78BB /* Donor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E916201D49788100BF78BB /* Donor+CoreDataProperties.swift */; };
 		48F18B0C1D429C1B000508A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F18B0B1D429C1B000508A0 /* AppDelegate.swift */; };
 		48F18B0E1D429C1B000508A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F18B0D1D429C1B000508A0 /* ViewController.swift */; };
@@ -30,7 +32,9 @@
 		4857C0B31D43D6510044C8A6 /* Donor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Donor.swift; path = ../Donor.swift; sourceTree = "<group>"; };
 		487BF64E1D478818009F8B1B /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		487BF6501D47925E009F8B1B /* testImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testImage.swift; sourceTree = "<group>"; };
+		488D73781D542906002D4C39 /* EditTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTableVC.swift; sourceTree = "<group>"; };
 		489B18521D42C9E000FFBD92 /* MaterialTxtFld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTxtFld.swift; sourceTree = "<group>"; };
+		48E1077C1D54D01B0016E92A /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		48E916201D49788100BF78BB /* Donor+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Donor+CoreDataProperties.swift"; path = "../Donor+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		48F18B081D429C1B000508A0 /* Hope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F18B0B1D429C1B000508A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 				48F18B0B1D429C1B000508A0 /* AppDelegate.swift */,
 				48E916201D49788100BF78BB /* Donor+CoreDataProperties.swift */,
 				4857C0B31D43D6510044C8A6 /* Donor.swift */,
+				48E1077C1D54D01B0016E92A /* DataService.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -117,6 +122,7 @@
 				48F18B271D42B6C8000508A0 /* ContainerVC.swift */,
 				48F18B291D42BA66000508A0 /* AddDonorVC.swift */,
 				487BF64E1D478818009F8B1B /* DetailTableViewController.swift */,
+				488D73781D542906002D4C39 /* EditTableVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -202,10 +208,12 @@
 				487BF6511D47925E009F8B1B /* testImage.swift in Sources */,
 				4850EBFC1D43C13B003B544E /* MaterialButton.swift in Sources */,
 				48F18B261D42A1D4000508A0 /* MaterialView.swift in Sources */,
+				48E1077D1D54D01B0016E92A /* DataService.swift in Sources */,
 				487BF64F1D478818009F8B1B /* DetailTableViewController.swift in Sources */,
 				48F18B0C1D429C1B000508A0 /* AppDelegate.swift in Sources */,
 				4857C0B41D43D6510044C8A6 /* Donor.swift in Sources */,
 				48F18B141D429C1B000508A0 /* Hope.xcdatamodeld in Sources */,
+				488D73791D542906002D4C39 /* EditTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

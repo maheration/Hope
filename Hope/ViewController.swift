@@ -108,17 +108,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        let donor = donors[indexPath.row]
-        performSegueWithIdentifier("toDetailVC", sender: donor)
+        performSegueWithIdentifier("toDetailVC", sender: indexPath)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "toDetailVC" {
-            
-            let destinVC = segue.destinationViewController as! DetailTableViewController
-            destinVC.donorPressed = sender as! Donor
-            
-            
+            if let indexPath = sender as? NSIndexPath {
+                let donor = donors[indexPath.row]
+                let destinVC = segue.destinationViewController as! DetailTableViewController
+                destinVC.donorPressed = donor
+            }
         }
     }
     

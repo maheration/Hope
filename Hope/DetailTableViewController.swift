@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class DetailTableViewController: UITableViewController {
     
@@ -71,14 +72,18 @@ class DetailTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateLbls()
-        
-
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        updateLbls()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
   
     }
+    
     
     func updateLbls() {
         
@@ -387,5 +392,20 @@ class DetailTableViewController: UITableViewController {
         
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    @IBAction func editBtnPressed(sender: UIButton) {
+        
+        performSegueWithIdentifier("toEditVC", sender: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "toEditVC" {
+            
+            let destinVC = segue.destinationViewController as! EditTableVC
+            destinVC.pressedDonor = donorPressed
+        }
+    }
+    
    
 }
