@@ -15,6 +15,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var editBtn: UIButton!
     
     var donors = [Donor]()
+    @IBOutlet weak var infoTxt: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,12 +25,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
+    
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
         fetchAndSetResult()
         tableView.reloadData()
-        
+        showHideInfoTxt()
     }
     
     func fetchAndSetResult() {
@@ -102,6 +105,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             donors.removeAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+            showHideInfoTxt()
         }
     }
     
@@ -118,6 +122,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 let destinVC = segue.destinationViewController as! DetailTableViewController
                 destinVC.donorPressed = donor
             }
+        }
+    }
+    
+    
+    func showHideInfoTxt() {
+        if donors.count > 0 {
+            infoTxt.hidden = true
+        } else {
+            infoTxt.hidden = false
+            
         }
     }
     
